@@ -34,9 +34,20 @@ body, h3, h2, h1, p {
   background-repeat: no-repeat;
 }
 
+.bg-secondary {
+  background-image: url(../img/houzzie/onboarding-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .form-wrapper {
   background-color: white;
   padding: 25px 15px;
+}
+
+.fnt-w8-700 {
+  font-weight: 700;
 }
 
 
@@ -83,6 +94,14 @@ body, h3, h2, h1, p {
   width: 50%;
 }
 
+.width-60 {
+  width: 60%;
+}
+
+.width-70 {
+  width: 70%;
+}
+
 .mgn-tp-45 {
   margin-top: 45%!important;
 }
@@ -94,9 +113,29 @@ body, h3, h2, h1, p {
   margin-top: 30px; 
 }
 
+.fnt-16 {
+  font-size: 16px;
+}
+
+.right-btm-btn {
+  background-color: green;
+  padding: 15px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+  color: white!important;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-right: -15px;
+}
+
 .cstm-clr-header {
   color: #4D4D4D;
 }
+
+.clr-green {
+  color: #16D173;
+}
+
 
 .otp-input-form {
     padding-left: 0em!important;
@@ -147,6 +186,7 @@ body, h3, h2, h1, p {
 
 
 
+/* SMS CONFIRMATION ANGULAR APP STYLING */
 
 .content .form-otp h1 {
   color: #ffffff;
@@ -168,18 +208,20 @@ body, h3, h2, h1, p {
   outline: none;
   width: 10%;
   transition: all .2s ease-in-out;
-  border-radius: unset;!important;
+  border-radius: unset!important;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 2px solid black;
 }
 .content .otp-number-input:focus {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #FDBD10;
 }
 .content .otp-number-input::selection {
   background: transparent;
 }
 .content .verif-b-orange {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #FDBD10;
 }
+
+/* END SMS CONFIRMATION ANGULAR APP STYLING */
