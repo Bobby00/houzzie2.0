@@ -6,6 +6,13 @@ body, h3, h2, h1, p {
   background-color: #16D173;
 }
 
+.form-wrapper {
+  border-radius: 10px;
+}
+
+.clr-green {
+  color: #39B54A!important;
+}
 
 .bg-main {
   background-image: url(../img/houzzie/bg-main.png);
@@ -18,15 +25,51 @@ body, h3, h2, h1, p {
   padding: 15px;
 }
 
+
+.border-green {
+  border: 1px solid #39B54A;
+  border-radius: 10px;
+}
+
+.input-form-styl {
+  border-radius: 0px 10px 10px 0px!important;
+  background-color: white!important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #16D173;
+  border-color: #16D173;
+  color: white;
+  font-size: 15px;
+}
+
 .width-20 {
   width: 20%;
 }
+
+.width-30 {
+  width: 30%;
+}
+
 .width-50 {
   width: 50%;
 }
 
 .mgn-tp-45 {
   margin-top: 45%!important;
+}
+
+.helper-text {
+  font-size: 10px;
+  color: white;
+  font-weight: 400;
+  margin-top: 30px; 
 }
 
 .cstm-clr-header {
@@ -57,6 +100,7 @@ body, h3, h2, h1, p {
   bottom: 0;
   width: 90%;
   right: 10px;
+  padding: 15px 0px;
   left: 18px;
   border-radius: 30px 30px 0px 0px;
 }
