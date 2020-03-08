@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="bg-main" data-smooth-scroll-offset="77">
+        <div class="nav-container"> </div>
+        <div class="main-container">
+            <section class="cover height-70 text-center">
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img class="width-30" src="img/houzzie/logo-short.png">
+                            <h1 class="fnt-w8-800 cstm-clr-header fnt-25 mgn-tp--10px">OTP CODE</h1>
+                            <p>Enter the code you have received via SMS</p>
+                        </div>
+                    </div>
+
+<br>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+
+                            <div class="form-wrapper">
+                                <img class="width-40" src="img/houzzie/sms-confirm-logo.png" >
+
+                                <section id="wrapper" ng-app="otp">
+                                    <div class="content" ng-controller="otpCtrl">
+                                      <form ng-submit="profile.submitPhone()" name="profile.formTelephone" class="form-otp" no-validate> 
+                                        <div class="row">
+                                            <div class="input-code">
+                                                <input type="text" id="otp-number-input-1" class="otp-number-input otp-input-form"  maxlength="1" ng-change="myFunc(this)" ng-model="myValue1" numbers-only>
+                                              
+                                                <input type="text" id="otp-number-input-2" class="otp-number-input mgn-tp-0 otp-input-form" maxlength="1" ng-change="myFunc(this)" ng-model="myValue2" numbers-only>
+                                              
+                                               <input type="text" id="otp-number-input-3" class="otp-number-input mgn-tp-0 otp-input-form" maxlength="1" ng-change="myFunc(this)" ng-model="myValue3" numbers-only>
+                                              
+                                               <input type="text" id="otp-number-input-4" class="otp-number-input mgn-tp-0 otp-input-form" maxlength="1" ng-change="myFunc(this)" ng-model="myValue4" numbers-only>
+                                              
+                                            </div>
+                                        </div>
+                                        
+                                      </form>
+                                    </div>
+                                </section>
+
+                                <p>The code will be resent in <span>00:15</span></p>
+
+                                <button class="signup-btn">Resend</button>
+
+    
+
+                            </div>
+
+                        </div>
+                    </div>
+                        
+                    <div class="container">
+                        <div class="sticky-footer-nav">
+                            <p></p> 
+                        </div>
+                    </div>             
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js'></script><script  src="./script.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+
+</html>
