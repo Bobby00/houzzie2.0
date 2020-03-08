@@ -1,119 +1,126 @@
-window.addEventListener('load', registerEvents,false);
+var app = angular.module('otp', []);
 
-var theCountApple = 0;
-var theCountAvocado = 0;
-var theCountBanana = 0;
-var theCountStrawberry = 0;
-var theCountMelon = 0;
-var theCountMango = 0;
+app.directive('countdown', ['$interval', function ($interval) {
+  return {
+    scope: {
+      timer: '=duration',
+      callback: '&timeoutCallback'
+    },
+    restrict: 'E',
+    template: '<span>{{minutes}}:{{seconds}}</span>',
+    link: function (scope, element, attrs){
 
+      scope.ipromise = $interval(function() {
+        var minutes, seconds;
+        minutes = parseInt(scope.timer / 60, 10)
+        seconds = parseInt(scope.timer % 60, 10);
+        scope.minutes = minutes < 10 ? "0" + minutes : minutes;
+        scope.seconds = seconds < 10 ? "0" + seconds : seconds;
+        if(scope.timer > 0){
+             scope.timer--;   
+        }else{
+          scope.callback();
+          $interval.cancel(scope.ipromise);
+        }
+      }, 1000);
+    }
+  };
+}]);
 
-function registerEvents(a) {
-  document.getElementById("incrementButtonApple").addEventListener('click', increaseCountApple,false);
-  document.getElementById("decrementButtonApple").addEventListener('click', decreaseCountApple,false);
-	document.getElementById("incrementButtonAvocado").addEventListener('click', increaseCountAvocado,false);
-  document.getElementById("decrementButtonAvocado").addEventListener('click', decreaseCountAvocado,false);
-	document.getElementById("incrementButtonBanana").addEventListener('click', increaseCountBanana,false);
-  document.getElementById("decrementButtonBanana").addEventListener('click', decreaseCountBanana,false);
-	document.getElementById("incrementButtonStrawberry").addEventListener('click', increaseCountStrawberry,false);
-  document.getElementById("decrementButtonStrawberry").addEventListener('click', decreaseCountStrawberry,false);
-	document.getElementById("incrementButtonMelon").addEventListener('click', increaseCountMelon,false);
-  document.getElementById("decrementButtonMelon").addEventListener('click', decreaseCountMelon,false);
-	document.getElementById("incrementButtonMango").addEventListener('click', increaseCountMango,false);
-  document.getElementById("decrementButtonMango").addEventListener('click', decreaseCountMango,false);
-}
+app.controller('otpCtrl', ['$scope', function($scope) {
+    
+    $scope.status = 'countdown started ';
+    $scope.verifyCodeOtp = '';
+    
+    
+   
+    $scope.myFunc = ( myvalue) => {
+        var myEl = document.getElementById("otp-number");
+        var num1 = document.getElementById("otp-number-input-1");
+        var num2 = document.getElementById("otp-number-input-2");
+        var num3 = document.getElementById("otp-number-input-3");
+        var num4 = document.getElementById("otp-number-input-4");
+        
+        myEl.value = parseInt(num1.value + num2.value + num3.value + num4.value);
+      
+        if(num1.value.length === 1){
+            num1.classList.add("verif-b-orange"); 
+        }else{
+           num1.classList.remove("verif-b-orange");
+        }
+      
+        if(num2.value.length === 1){
+            num2.classList.add("verif-b-orange"); 
+        }else{
+           num2.classList.remove("verif-b-orange");
+        }
+      
+        if(num3.value.length === 1){
+            num3.classList.add("verif-b-orange"); 
+        }else{
+           num3.classList.remove("verif-b-orange");
+        }
+      
+        if(num4.value.length === 1){
+           num4.classList.add("verif-b-orange"); 
+        }else{
+           num4.classList.remove("verif-b-orange");
+        }
+      
+        
+        var container = document.getElementsByClassName("input-code")[0];
+        container.onkeyup = function(e) {
+          var target = e.target;
+    
+          var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+          var myLength = target.value.length;
+      
+          if (myLength >= maxLength) {
+            var next = target;
+            while (next = next.nextElementSibling) {
+                if (next == null)
+                  break;
+                if (next.tagName.toLowerCase() == "input") {
+                  next.focus();
+                  break;
+                }
+            }
+        }else if(myLength < maxLength){
+            var prev = target;
+            while(prev = prev.previousElementSibling){
+              if(prev == null)
+                break
+              
+              if(prev.tagName.toLowerCase() == "input"){
+                prev.focus();
+                break;
+              }
+            }
+        }
+      }
+    };
+  
+   
+    
+}]);
 
-function increaseCountApple(a) {
-  theCountApple++;
-  document.getElementById("currentCountApple").innerHTML = theCountApple;
+app.directive('numbersOnly', function () {
+    return {
+        require: 'ngModel',
+        link: function (scope, element, attr, ngModelCtrl) {
+            function fromUser(text) {
+                if (text) {
+                    var transformedInput = text.replace(/[^0-9]/g, '');
 
-}
-
-function decreaseCountApple(a) {
-if (theCountApple > 0) {
-  theCountApple--;
-}
-      document.getElementById("currentCountApple").innerHTML = theCountApple;
-			
-}
-
-// Countup and Countdown Functions for Avocado
-
-
-function increaseCountAvocado(b) {
-  theCountAvocado++;
-  document.getElementById("currentCountAvocado").innerHTML = theCountAvocado;
-
-}
-
-function decreaseCountAvocado(b) {
-if (theCountAvocado > 0) {
-  theCountAvocado--;
-}
-      document.getElementById("currentCountAvocado").innerHTML = theCountAvocado;
-			
-}
-
-// Countup and Countdown Functions for Banana
-
-function increaseCountBanana(c) {
-  theCountBanana++;
-  document.getElementById("currentCountBanana").innerHTML = theCountBanana;
-
-}
-
-function decreaseCountBanana(c) {
-if (theCountBanana > 0) {
-  theCountBanana--;
-}
-      document.getElementById("currentCountBanana").innerHTML = theCountBanana;
-			
-}
-
-// Countup and Countdown Functions for Strawberry
-
-function increaseCountStrawberry(d) {
-  theCountStrawberry++;
-  document.getElementById("currentCountStrawberry").innerHTML = theCountStrawberry;
-
-}
-
-function decreaseCountStrawberry(d) {
-if (theCountStrawberry > 0) {
-  theCountStrawberry--;
-}
-      document.getElementById("currentCountStrawberry").innerHTML = theCountStrawberry;
-			
-}
-
-// Countup and Countdown Functions for Melon
-
-function increaseCountMelon(e) {
-  theCountMelon++;
-  document.getElementById("currentCountMelon").innerHTML = theCountMelon;
-
-}
-
-function decreaseCountMelon(e) {
-if (theCountMelon > 0) {
-  theCountMelon--;
-}
-      document.getElementById("currentCountMelon").innerHTML = theCountMelon;
-			
-}
-
-// Countup and Countdown Functions for Mango
-
-function increaseCountMango(f) {
-  theCountMango++;
-  document.getElementById("currentCountMango").innerHTML = theCountMango;
-
-}
-
-function decreaseCountMango(f) {
-if (theCountMango > 0) {
-  theCountMango--;
-}
-      document.getElementById("currentCountMango").innerHTML = theCountMango;
-			
-}
+                    if (transformedInput !== text) {
+                        ngModelCtrl.$setViewValue(transformedInput);
+                        ngModelCtrl.$render();
+                    }
+                    return transformedInput;
+                }
+                return undefined;
+            }            
+            ngModelCtrl.$parsers.push(fromUser);
+        }
+    };
+});

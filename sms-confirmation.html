@@ -37,7 +37,7 @@
                             <div class="form-wrapper">
                                 <img class="width-40" src="img/houzzie/sms-confirm-logo.png" >
 
-                                <section id="wrapper" ng-app="otp">
+                                <section class="pd-cstm-sms-con" id="wrapper" ng-app="otp">
                                     <div class="content" ng-controller="otpCtrl">
                                       <form ng-submit="profile.submitPhone()" name="profile.formTelephone" class="form-otp" no-validate> 
                                         <div class="row">
@@ -51,6 +51,7 @@
                                                <input type="text" id="otp-number-input-4" class="otp-number-input mgn-tp-0 otp-input-form" maxlength="1" ng-change="myFunc(this)" ng-model="myValue4" numbers-only>
                                               
                                             </div>
+                                            <input type="text" name="otp-number" id="otp-number" class="hidden" maxlength="6" >
                                         </div>
                                         
                                       </form>
@@ -83,8 +84,9 @@
         <script src="js/parallax.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js'></script><script  src="./script.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js'></script>
         <script src="js/scripts.js"></script>
+        <script src="js/custom-scripts.js"></script>
 
     </body>
 
