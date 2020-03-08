@@ -2,6 +2,10 @@ body, h3, h2, h1, p {
   font-family: 'Montserrat', sans-serif;
 }
 
+.form-control {
+  height: 40px;
+}
+
 .bg-light-green {
   background-color: #16D173;
 }
