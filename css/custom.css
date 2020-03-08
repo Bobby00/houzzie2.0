@@ -26,6 +26,7 @@ body, h3, h2, h1, p {
 .bg-main {
   background-image: url(../img/houzzie/bg-main.png);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
