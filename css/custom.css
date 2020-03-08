@@ -26,6 +26,9 @@ body, h3, h2, h1, p {
 .clr-green {
   color: #39B54A!important;
 }
+.clr-white {
+  color: white;
+}
 
 .bg-main {
   background-image: url(../img/houzzie/bg-main.png);
@@ -36,6 +39,13 @@ body, h3, h2, h1, p {
 
 .bg-secondary {
   background-image: url(../img/houzzie/onboarding-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-green-img {
+  background-image: url(../img/houzzie/bg-green.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -102,6 +112,10 @@ body, h3, h2, h1, p {
   width: 70%;
 }
 
+.mgn-tp-20 {
+  margin-top: 20%!important;
+}
+
 .mgn-tp-45 {
   margin-top: 45%!important;
 }
@@ -118,8 +132,8 @@ body, h3, h2, h1, p {
 }
 
 .right-btm-btn {
-  background-color: green;
-  padding: 15px;
+  background-color: #16D173;
+  padding: 15px 30px;
   float: right;
   border-radius: 30px 0px 0px 30px;
   color: white!important;
@@ -127,6 +141,42 @@ body, h3, h2, h1, p {
   margin-top: 25px;
   margin-right: -15px;
 }
+
+.right-btm-btn:hover {
+  background-color: white;
+  padding: 15px 30px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+  color: #16D173!important;
+  border:2px solid #16D173;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-right: -15px;
+}
+
+.right-btm-btn-inv:hover {
+  background-color: #16D173;
+  padding: 15px 30px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+  color: white!important;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-right: -15px;
+}
+
+.right-btm-btn-inv {
+  background-color: white;
+  padding: 15px 30px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+  color: #16D173!important;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-right: -15px;
+}
+
+
 
 .cstm-clr-header {
   color: #4D4D4D;
