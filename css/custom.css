@@ -6,6 +6,14 @@ body, h3, h2, h1, p {
   height: 40px;
 }
 
+.bar {
+  padding: 0.15714286em 0;
+}
+
+.cstm-height {
+  padding: 0.5em 0em;
+}
+
 .pd-cstm-sms-con {
   padding: 1.57142857em 0;
 }
@@ -22,6 +30,36 @@ body, h3, h2, h1, p {
   margin-top: 0px!important;
 }
 
+.mgn-tp-20px {
+  margin-top: 12px;
+}
+
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.menu-toggle i {
+  font-size: 2.28571429em;
+  color: #fff;
+}
+
+.ctsm-icon-search {
+  border-radius: 20px;
+}
+
+.pd-tp-20 {
+  padding-top: 10px;
+}
+
+
+.back-btn-1-tp {
+  position: absolute;
+  top: 20px;
+  font-size: 25px;
+  color: white!important;
+  margin-left: 20px;
+}
 
 .clr-green {
   color: #39B54A!important;
@@ -46,6 +84,13 @@ body, h3, h2, h1, p {
 
 .bg-green-img {
   background-image: url(../img/houzzie/bg-green.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-tetiary {
+  background-image: url(../img/houzzie/bg-tetiary.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -84,8 +129,17 @@ body, h3, h2, h1, p {
   font-size: 15px;
 }
 
+.btn-1 {
+  background-color: #16D173;
+  padding: 10px 22px;
+  font-size: 16px!important;
+  color: white!important;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
 .width-20 {
-  width: 20%;
+  width: 20%!important;
 }
 
 .width-25 {
@@ -112,6 +166,14 @@ body, h3, h2, h1, p {
   width: 70%;
 }
 
+.width-80 {
+  width: 80%;
+}
+
+.mgn-tp-15 {
+  margin-top: 15%!important;
+}
+
 .mgn-tp-20 {
   margin-top: 20%!important;
 }
@@ -129,6 +191,14 @@ body, h3, h2, h1, p {
 
 .fnt-16 {
   font-size: 16px;
+}
+
+.fnt-20 {
+  font-size: 20px;
+}
+
+.fnt-25 {
+  font-size: 25px;
 }
 
 .right-btm-btn {
@@ -161,6 +231,8 @@ body, h3, h2, h1, p {
   border-radius: 30px 0px 0px 30px;
   color: white!important;
   font-size: 16px;
+  transition: 0.7;
+  border:2px solid white;
   margin-top: 25px;
   margin-right: -15px;
 }
@@ -169,11 +241,26 @@ body, h3, h2, h1, p {
   background-color: white;
   padding: 15px 30px;
   float: right;
+  transition: 0.7;
   border-radius: 30px 0px 0px 30px;
   color: #16D173!important;
   font-size: 16px;
   margin-top: 25px;
   margin-right: -15px;
+}
+
+.mgn-btm-10px {
+  margin-bottom: 10px;
+}
+
+
+.card-cstm {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.landing-header {
+  margin-bottom: 0em!important;
 }
 
 
@@ -184,6 +271,10 @@ body, h3, h2, h1, p {
 
 .clr-green {
   color: #16D173;
+}
+
+.clr-black {
+  color: black!important;
 }
 
 
@@ -200,8 +291,8 @@ body, h3, h2, h1, p {
   margin-top: -10px;
 }
 
-.fnt-25 {
-  font-size: 25px;
+.mgn-tp--20px {
+  margin-top: -20px;
 }
 
 .text-styl {
