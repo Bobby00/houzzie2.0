@@ -53,6 +53,12 @@ body, h3, h2, h1, p {
 }
 
 
+.pd-btm-10 {
+  padding-bottom: 10px;
+}
+
+
+
 
 .back-btn-1-tp {
   position: absolute;
@@ -188,6 +194,17 @@ body, h3, h2, h1, p {
   color: white;
   font-weight: 400;
   margin-top: 30px; 
+}
+
+.fnt-10 {
+  font-size: 10px;
+}
+
+.fnt-12 {
+  font-size: 12px;
+}
+.fnt-14 {
+  font-size: 14px;
 }
 
 .fnt-16 {
