@@ -53,6 +53,7 @@ body, h3, h2, h1, p {
 }
 
 
+
 .back-btn-1-tp {
   position: absolute;
   top: 20px;
@@ -249,6 +250,11 @@ body, h3, h2, h1, p {
   margin-right: -15px;
 }
 
+.mgn-btm-0 {
+  margin-bottom: 0px!important;
+}
+
+
 .mgn-btm-10px {
   margin-bottom: 10px;
 }
@@ -261,6 +267,17 @@ body, h3, h2, h1, p {
 
 .landing-header {
   margin-bottom: 0em!important;
+}
+
+.dm-type-styl {
+  background-color: white!important;
+  margin-bottom: 1px!important;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.cstm-pd-col {
+  padding: 0px 3px!important;
 }
 
 
@@ -309,6 +326,21 @@ body, h3, h2, h1, p {
   padding: 15px 0px;
   left: 18px;
   border-radius: 30px 30px 0px 0px;
+}
+
+.sticky-footer-nav-inv {
+  background-color: #16D173;
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  right: 10px;
+  padding: 10px 0px 0px 0px;
+  left: 18px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.sticky-footer-nav-inv img {
+  width: 50%;
 }
 
 .cstm-bdr-radius {
