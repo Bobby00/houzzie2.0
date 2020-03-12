@@ -34,6 +34,10 @@ body, h3, h2, h1, p {
   margin-top: 12px;
 }
 
+.slice-4-sides {
+  padding-right: 11px;
+  padding-left: 11px;
+}
 
 .transparent-bg {
   background-color: transparent;
@@ -57,6 +61,9 @@ body, h3, h2, h1, p {
   padding-bottom: 10px;
 }
 
+.cstm-mgn-btm-dm {
+  margin-bottom: 0.55714286em!important;
+}
 
 
 
@@ -144,6 +151,19 @@ body, h3, h2, h1, p {
   border-radius: 10px;
   font-weight: 500;
 }
+
+.width-5 {
+  width: 4%!important;
+}
+
+.width-10 {
+  width: 10%!important;
+}
+
+.width-15 {
+  width: 15%!important;
+}
+
 
 .width-20 {
   width: 20%!important;
@@ -275,15 +295,44 @@ body, h3, h2, h1, p {
   margin-bottom: 0px!important;
 }
 
+.tabs {
+  border: unset;
+  margin-bottom: unset;
+  margin-top: 20px;
+  margin-left: -15px;
+}
 
 .mgn-btm-10px {
   margin-bottom: 10px;
 }
 
+.tabs-content {
+  padding: 20px 35px;
+  margin-left: -30px!important;
+  margin-right: -30px!important;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+
+.pie-wrapper .label {
+  left: 0.3em!important;
+}
 
 .card-cstm {
   padding: 15px;
   border-radius: 10px;
+}
+
+.card-cstm-dm-prof {
+  padding: 15px;
+  border-radius: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .landing-header {
@@ -333,9 +382,28 @@ body, h3, h2, h1, p {
   margin-top: -20px;
 }
 
+.mgn-tp--60px {
+  margin-top: -60px;
+}
+
+.mgn--15-side {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
 .text-styl {
   line-height: 1.357143em;
   color: #808080;
+}
+
+.dm-profile-avatar {
+  margin-top: 12%;
+}
+
+.cstm-avatar-border {
+  border: 4px solid #fff;
+  border-radius: 100px;
 }
 
 .sticky-footer-nav {
@@ -387,6 +455,15 @@ body, h3, h2, h1, p {
   line-height: 1.2em;
 }
 
+.tab__title {
+  font-size: 14px;
+  text-align: center!important;
+}
+
+.tabs li.active .tab__title span {
+  color: #16d173;
+  border-bottom: 2px solid #16d173;
+}
 
 
 /* SMS CONFIRMATION ANGULAR APP STYLING */
