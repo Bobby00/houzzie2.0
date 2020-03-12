@@ -312,6 +312,8 @@ body, h3, h2, h1, p {
   margin-right: -30px!important;
   background-color: #fff;
   border-radius: 30px;
+  
+  box-shadow: 2px 3px 5px;
 }
 
 
