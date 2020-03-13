@@ -216,6 +216,20 @@ body, h3, h2, h1, p {
   margin-top: 30px; 
 }
 
+.boxed:not([class*='bg-']):hover {
+  background: green;
+  box-shadow: 5px 6px 8px;
+}
+
+.boxed:not([class*='bg-']):hover .text-styl {
+  color: white!important;
+}
+
+.boxed:not([class*='bg-']):hover h2 {
+  color: white!important;
+}
+
+
 .fnt-10 {
   font-size: 10px;
 }
