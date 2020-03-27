@@ -892,11 +892,19 @@ body, h3, h2, h1, p {
   display: inline-block;
   min-width: 100px;
   min-width: 120px;
-  border-radius: 30px 0px 0px 30px;
   padding: 12px;
   font-size: 18px;
   text-align: center;
 }
+
+.form-wizard .form-wizard-next-btn {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.form-wizard .form-wizard-previous-btn {
+  border-radius: 0px 30px 30px 0px;
+}
+
 .form-wizard .form-wizard-next-btn:hover, .form-wizard .form-wizard-next-btn:focus, .form-wizard .form-wizard-previous-btn:hover, .form-wizard .form-wizard-previous-btn:focus, .form-wizard .form-wizard-submit:hover, .form-wizard .form-wizard-submit:focus {
   color: #ffffff;
   opacity: 0.6;
@@ -919,7 +927,7 @@ body, h3, h2, h1, p {
   width: 100%;
 }
 .form-wizard .form-wizard-previous-btn {
-  background-color: #fb1647;
+  background-color: #66666694;
 }
 .form-wizard .form-control {
   font-weight: 300;
